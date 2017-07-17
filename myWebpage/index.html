@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Webpage</title>
+		<link rel="stylesheet" media="screen" href="css/screen.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://use.fontawesome.com/23d9625b57.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="scripts/webpagejquery.js"></script>
+		<script src="scripts/weatherunderground.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+	</head>
+	<body>
+
+		<div id="page">
+
+			<header>
+				<a class="logo" title="Everyday Things" href="./index.html"><span>Everyday Things</span></a>
+				<div class="hero">
+						<h1>High performance. Delivered.</h1>
+						<a class="btn" title="Get Advice from top designers" href="#">
+								Get Advice from top designers
+						</a>
+				</div>
+			</header>
+
+			<section class="main">
+
+						<aside>
+							<div class="content trending">
+								<h3>
+									<a href="#">What&apos;s trending</a>
+								</h3>
+								<p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. <a href="http://codifydesign.com">Morbi commodo</a>, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>
+							</div>
+						</aside>
+
+						<aside>
+							<div class="content find-it">
+								<h3><a href="#">Where to find it</a></h3>
+								<p>Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Lorem ipsum dolor sit amet, consect.</p>
+
+							</div>
+						</aside>
+
+						<aside>
+							<div class="content tools">
+								<h3><a href="#">Tools of the trade</a></h3>
+								<p>Nullam sit amet enim. Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci rhoncus neque, id pulvinar odio.</p>
+
+							</div>
+						</aside>
+					</section>
+			<section class="atmosphere">
+				<article>
+				<div id="map"></div>
+				<script>
+		      function initMap() {
+		        var uluru = {lat: 51.543684, lng: -0.129120};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 5,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		      }
+		    </script>
+		    <script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuLsEM_aPVE8VxdE7nvlVIo8Gf_JKqoT8&callback=initMap">
+		    </script>
+
+							<h2>Offices near you</h2>
+							<p>Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Lorem ipsum dolor sit amet etuer adipiscing elit.  Pulvinar odio lorem non turpis. Nullam sit amet enim lorem.</p>
+							<a class="btn" title="Creating a modern atmosphere" href="#">Lean More</a>
+						</article>
+
+			</section>
+			<section class="how-to">
+
+					<aside id="carousel">
+						<div class="autoplay">
+						 <div><img src="images/photo_lighting.jpg"/></div>
+						 <div><img src="images/photo_lounge.jpg"/></div>
+						 <div><img src="images/photo_seating.jpg"/></div>
+						</div>
+
+					</aside>
+
+					<!--<blockquote>
+						<p class="quote">Lorem ipsum dolor sit amet conse ctetuer adipiscing elit. Morbi comod sed dolor sit amet consect adipiscing elit.</p>
+						<p class="credit"><strong>Author Name</strong><br><em>Business Title</em><br> Company</p>
+
+					</blockquote>-->
+			</section>
+			<section class="signup">
+
+				<h2> Find out more </h2>
+
+				<aside class="signupcontent">
+						<div class="signupcontent">
+							<i class="fa fa-user-plus fa-5x" aria-hidden="true"></i>
+								<h4>Sign up for the best deals</h4>
+						</div>
+				</aside>
+
+				<aside class="form">
+
+					<div class="form">
+
+					<form>
+						<p>
+							<label for="fname">First Name:</label>
+							<input type="text" id="name" required autofocus placeholder="John"/>
+						</p>
+						<p>
+							<label for="sname">Surname:</label>
+						<input type="text" id="sname" required placeholder="Smith"/>
+					</p>
+						<p>
+							<label for="telephone">Telephone:</label>
+						<input type="tel" id="telephone" maxlength="11" placeholder="01234567892"/>
+					</p>
+						<p>
+							<label for="email">Email:</label>
+						<input type="email" id="email" placeholder="John.Smith@example.com"/><br>
+					</p>
+						<p class="submit"><br>
+							<input type="submit" id="submit" value="Submit">
+						</p>
+					</form>
+
+				</div>
+
+				</aside>
+
+			</section>
+			<section class="weather">
+				<h2> The Weather Today </h2>
+				<aside id="weatherleft">
+
+					 <div id="location">City UT</div>
+					 <div id="weather">Current Conditions</div>
+					 <div id="temperature">00</div>
+					 <div id="desc">A mix of clouds</div>
+
+				 </aside>
+
+				 <aside id="weatherright">
+
+				 	<div>
+						<span id="r1c1"></span>
+						<span><img id="r1c2" ></span>
+						<span id="r1c3"></span>
+						<span id="r1c4"></span>
+					</div>
+
+					<div>
+						<span id="r2c1"></span>
+						<span><img id="r2c2" ></span>
+						<span id="r2c3"></span>
+						<span id="r2c4"></span>
+					</div>
+
+					<div>
+						<span id="r3c1"></span>
+						<span><img id="r3c2" ></span>
+						<span id="r3c3"></span>
+						<span id="r3c4"></span>
+					</div>
+
+				 </aside>
+
+			</section>
+
+			<nav id="mainmenu">
+
+					<ul>
+							<li>
+									<a class ="aboutus" title="About Us" href="#" aria-haspopup="true">About Us</a>
+									<ul>
+										<li>
+												<a title="SubLink 1" href="#">Sublink 1</a>
+										</li>
+										<li>
+												<a title="Sublink 2" href="#">Sublink 2</a>
+										</li>
+									</ul>
+							</li>
+							<li>
+									<a title="Design Corner" href="#" aria-haspopup="true">Design Corner</a>
+									<ul>
+										<li>
+												<a title="SubLink 1" href="#" aria-haspopup="true">Sublink 1</a>
+												<ul>
+													<li>
+															<a title="Sub SubLink 1" href="#">Sub Sublink 1</a>
+													</li>
+													<li>
+															<a title="Sub Sublink 2" href="#">Sub Sublink 2</a>
+													</li>
+												</ul>
+										</li>
+										<li>
+												<a title="Sublink 2" href="#">Sublink 2</a>
+										</li>
+									</ul>
+							</li>
+							<li>
+									<a title="Products" href="#" >Products</a>
+							</li>
+							<li>
+									<a title="Contact Us" href="#">Contact Us</a>
+							</li>
+					</ul>
+
+			</nav>
+
+			<footer>
+
+					&copy; Everyday Things
+					<div class="content">
+							<a title="Privacy Policy" href="#"> Privacy Policy</a>
+							<a title="Terms of Services" href="#"> Terms of Services</a>
+
+					</div>
+
+			</footer>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.autoplay').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 2000
+			});
+		});
+
+		</script>
+
+	</body>
+
+</html>
